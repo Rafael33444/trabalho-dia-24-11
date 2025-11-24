@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Calculadora de Salário</h2>
+
+        <div class="form-group">
+            <label> Digite seu salário bruto:</label>
+            <input type="number" id="salario" placeholder="Insira o seu salário">
+        </div>
+
+        <div class="form-group">
+            <label> Número de dependentes:</label>
+            <input type="number" id="dependentes" value="0">
+        </div>
+
+        <button onclick="calcular()">Calcular</button>
+
+        <div class="resultado">
+            <h3>Descontos:</h3>
+            <p>INSS: <span id="inss">0,00</span></p>
+            <p>IMPOSTO DE RENDA: <span id="ir">0,00</span></p>
+
+            <h3>SEU SALÁRIO LÍQUIDO:</h3>
+            <p id="liquido">0,00</p>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
